@@ -1,0 +1,18 @@
+https://www.yumpu.com/pt/document/read/22448307/escolher-sgbd-postgres-e-base-de-dados-tenis-nao-alterar-
+1) SELECT nome, ano_p - ano_n < 22
+
+2) Select MIN(ano_n) FROM jogadores
+
+3) Select nome,ano_n from jogadores WHERE ano_n BETWEEN 75 and 81
+
+4) SELECT * FROM jogadores where natp IS NOT NULL
+
+5) SELECT nome FROM jogadores 
+WHERE ano_n < (SELECT ano_n 
+FROM jogadores
+WHERE nome ='Kuerten')
+
+6) SELECT nomet, ano, numj
+FROM torneios, lista_Torneios
+WHERE torneios.numt = lista_torneios.numt
+
